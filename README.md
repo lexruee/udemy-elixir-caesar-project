@@ -39,3 +39,15 @@ Caesar.Cipher.encrypt("abc", "1")
 ```
 ./caesar encrypt abc --shift 1
 ```
+
+## Running tests
+
+```
+mix test
+```
+
+## Generate Doc
+
+```
+mix docs
+```
