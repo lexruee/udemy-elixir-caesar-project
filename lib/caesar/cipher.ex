@@ -3,6 +3,20 @@ defmodule Caesar.Cipher do
 
   @alphabet_size Application.get_env(:caesar, :alphabet_size)
 
+  @moduledoc """
+  Caesar Cipher module, which maps characters to new characters.
+  """
+
+  @doc """
+  Encrypt the message by applying a mapping that shifts the alphabet 
+  by the `shift` value.
+
+  ## Examples
+
+      iex> Caesar.Cipher.encrypt("abc", 1)
+      "zab"
+
+  """
   def encrypt(msg, shift) do
     Logger.debug("encrypting #{msg} with a shift number #{shift}")
     msg
