@@ -19,3 +19,23 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/caesar](https://hexdocs.pm/caesar).
 
+## Running from the shell
+
+```
+mix run -e 'Caesar.main(["encrypt", "abc", "--shift", "1"])'
+```
+
+
+## Running from iex
+
+```
+iex -S mix
+Caesar.main(["encrypt", "abc", "--shift", "1"])
+Caesar.Cipher.encrypt("abc", "1")
+```
+
+## Running the escript app
+
+```
+./caesar encrypt abc --shift 1
+```
